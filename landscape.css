@@ -1,0 +1,452 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+div.landscape {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #64bed8;
+}
+
+div.sun {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: relative; top:50px;
+	margin: 0 auto;
+	background-color: #ffefa9;
+}
+	div.sun:after {
+		content: '';
+		height: 115px;
+		width: 115px;
+		background-color: #fdda42;
+		border-radius: 50%;
+		position: absolute;
+		top: 12%; left: 0; right: 0;
+		margin: 0 auto;
+	}
+
+div.clouds {
+	position: relative;
+}
+	div.clouds div.cloud {
+		height: 54px;
+		border-radius: 30px;
+		background-color: #fff;
+		position: absolute;
+	}
+	div.clouds div.cloud.long {
+		width: 312px;
+	}
+	div.clouds div.cloud.medium {
+		width: 195px;
+	}
+	div.clouds div.cloud.short {
+		width: 117px;
+	}
+
+	div.clouds div.cloud.one {
+	    top: -73px; left: 24.3%;
+	}
+	div.clouds div.cloud.two {
+	    left: 57.7%; top: -49px;
+	}
+	div.clouds div.cloud.three {
+		left: 54.7%; top: -14px;
+	}
+	div.clouds div.cloud.four {
+	    top: -111px; left: 21.1%;
+	}
+	div.clouds div.cloud.five {
+	    left: 35.7%;
+	}
+	div.clouds div.cloud.six {
+	    left: 85.2%; top: -20px;
+	}
+	div.clouds div.cloud.seven {
+	    left: 3.1%;
+	}
+	
+div.iland {
+	width: 100%;
+	position: absolute;
+	top: 360px;
+}
+	div.iland div.land {
+		width: 83%;
+		height: 51px;
+		border-radius: 30px;
+		background-color: #bcc663;
+		margin: 0 auto;
+		position: relative; top: 34px;
+	}
+		div.iland div.land div.rock.one {
+			width: 58px;
+			height: 76px;
+			border-radius: 60% 60% 40% 60%/50% 50% 50% 50%;
+			background-color: #9c9c9c;
+			transform: rotate(81deg);
+			position: relative; left: 7%;
+		}
+		div.iland div.land div.rock.two {
+			width: 33px;
+			height: 25px;
+			border-radius: 8px;
+			background-color: #747472;
+			position: absolute;
+			top: 16px; left: 10%;
+			transform: rotate(-16deg);
+		}
+		div.iland div.land div.rock.three {
+			width: 15px;
+			height: 11px;
+			position: absolute;
+			top: 15px; left: 16.5%;
+			transform: rotate(-14deg);
+			background-color: #e39b53;
+			border-radius: 40% 60% 60% 40%/50%;
+		}
+		div.iland div.land div.rock.four {
+			width: 22px;
+			height: 16px;
+			position: absolute;
+			top: 12px; left: 40.9%;
+			transform: rotate(-153deg);
+			background-color: #e39b53;
+			border-radius: 40% 60% 60% 40%/50%;
+		}
+		div.iland div.land div.rock.five {
+			width: 38px;
+			height: 23px;
+			position: absolute;
+			top: 9px; left: 74.6%;
+			transform: rotate(-19deg);
+			background-color: #e39b53;
+			border-radius: 42%;
+		}
+		div.iland div.land div.rock.six {
+			width: 40px;
+			height: 43px;
+			border-radius: 13px;
+			background-color: #747472;
+			position: absolute;
+			top: 10px; left: 88.7%;
+			transform: rotate(28deg);
+		}
+		
+		div.iland div.land div.trees {
+			width: 100%;
+			position: relative; bottom: 59px;
+		}
+			div.iland div.land div.trees div.tree {
+				width: 24px;
+				height: 24px;
+				border-radius: 50%;
+				background-color: #737f35;
+				margin: -3px 0px 0px -9px;
+				position: absolute; bottom: 27px;
+			}
+				div.iland div.land div.trees div.tree.one {
+					left: 16%;
+				}
+				div.iland div.land div.trees div.tree.two {
+					
+				}
+				div.iland div.land div.trees div.tree.three {
+					
+				}
+				div.iland div.land div.trees div.tree.four {
+					
+				}
+				div.iland div.land div.trees div.tree.five {
+					
+				}
+				div.iland div.land div.trees div.tree.six {
+					
+				}
+				div.iland div.land div.trees div.tree.seven {
+					
+				}
+				div.iland div.land div.trees div.tree.eight {
+					
+				}
+				div.iland div.land div.trees div.tree.nine {
+					
+				}
+				div.iland div.land div.trees div.tree.ten {
+					
+				}
+				div.iland div.land div.trees div.tree.eleven {
+					
+				}
+				div.iland div.land div.trees div.tree:before {
+					content: '';
+					width: 12px;
+					height: 24px;
+					display: block;
+					background-color: #93a72c;
+					position: absolute;
+					top: 0px; left: 12px;
+					border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+				}
+
+				div.iland div.land div.trees div.tree div.leaves {
+					width: 1.5px;
+					height: 26px;
+					background-color: #332808;
+					position: relative; bottom: -8px;
+					margin:  0 auto;
+				}
+					div.iland div.land div.trees div.tree div.leaves:after,
+					div.iland div.land div.trees div.tree div.leaves:before {
+						content: '';
+						width: 6px;
+						height: 1px;
+						background-color: #332808;
+						display: block;
+						position: absolute;
+						top: 0px; left: -5px;
+						transform: rotate(45deg);
+						box-shadow: 5px 6px 0px 0px #332808;
+					}
+
+					div.iland div.land div.trees div.tree div.leaves:before {
+						top: 2px; left: 0px;
+						transform: rotate(-45deg);
+						box-shadow: -3px 4px 0px 0px #332808;
+					}
+		
+		div.iland div.land div.muntains {
+			position: relative; top: -17px
+		}
+			div.iland div.land div.muntains div.mountain{
+
+			}
+			div.iland div.land div.muntains div.mountain.white.one{
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: -123px; left: 5%;
+				border-style: solid;
+				border-width: 0 63px 86px 63px;
+				border-color: transparent transparent #ffffff transparent;
+			}
+				div.iland div.land div.muntains div.mountain.white.one:before {
+					content: '';
+					width: 218px;
+					height: 151px;
+					display: block;
+					clip-path: polygon(0 100%, 20% 60%, 37% 42%, 49% 64%, 71% 55%, 100% 100%);
+					background-color: #6a696f;
+					position: absolute;
+					top: -11px; left: -102px;
+				}
+				div.iland div.land div.muntains div.mountain.white.one:after {
+					content: '';
+					width: 210px;
+					height: 141px;
+					display: block;
+					clip-path: polygon(49% 0%, 0% 100%, 37% 100%);
+					background-color: rgba(0, 0, 0, .5);
+					position: absolute;
+					top: -1px; left: -102px;
+				}
+			div.iland div.land div.muntains div.mountain.white.two{
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: -170px;left: 80.7%;
+				border-style: solid;
+				border-width: 0 75px 116px 75px;
+				border-color: transparent transparent #ffffff transparent;
+			}
+				div.iland div.land div.muntains div.mountain.white.two:before {
+					content: '';
+					width: 241px;
+					height: 217px;
+					display: block;
+					clip-path: polygon(0 100%, 22% 61%, 35% 63%, 64% 58%, 77% 60%, 100% 100%);
+					background-color: #6a696f;
+					position: absolute;
+					top: -30px; left: -120px;
+				}
+				div.iland div.land div.muntains div.mountain.white.two:after {
+					content: '';
+					width: 317px;
+					height: 188px;
+					display: block;
+					clip-path: polygon(61.5% 0%, 69% 100%, 100% 100%);
+					background-color: rgba(0, 0, 0, .5);
+					position: absolute;
+					top: -1px; left: -195.5px;
+				}
+
+			div.iland div.land div.muntains div.mountain.gray.one {
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: -35px; left: 18%;
+				border-style: solid;
+				border-width: 0 62px 52px 22px;
+				border-color: transparent transparent #a6abc8 transparent;
+			}
+				div.iland div.land div.muntains div.mountain.gray.one:after {
+					content: '';
+					width: 106px;
+					height: 51px;
+					background-color: #7e87b0;
+					display: block;
+					position: absolute; left: -55px;
+					clip-path: polygon(51% 0%, 0 100%, 39% 100%);
+				}
+
+			div.iland div.land div.muntains div.mountain.gray.two {
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: -38px; left: 9.2%;
+				border-style: solid;
+				border-width: 0 69px 55px 55px;
+				border-color: transparent transparent #a6abc8 transparent;
+			}
+				div.iland div.land div.muntains div.mountain.gray.two:after {
+					content: '';
+					width: 106px;
+					height: 55px;
+					background-color: #7e87b0;
+					display: block;
+					position: absolute; left: -55px;
+					clip-path: polygon(51% 0%, 0 100%, 46% 100%);
+				}
+
+			div.iland div.land div.muntains div.mountain.gray.three {
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: -61px; left: 57.2%;
+				border-style: solid;
+				border-width: 0 70px 78px 70px;
+				border-color: transparent transparent #a6abc8 transparent;
+			}
+				div.iland div.land div.muntains div.mountain.gray.three:after {
+					content: '';
+					width: 106px;
+					height: 78px;
+					background-color: #7e87b0;
+					display: block;
+					position: absolute; left: -37px;
+					clip-path: polygon(35% 0%, 73% 100%, 100% 100%);
+				}
+
+			div.iland div.land div.muntains div.mountain.gray.four {
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: -44px; left: 53.5%;
+				border-style: solid;
+				border-width: 0 55px 61px 55px;
+				border-color: transparent transparent #a6abc8 transparent;
+			}
+				div.iland div.land div.muntains div.mountain.gray.four:after {
+					content: '';
+					width: 106px;
+					height: 61px;
+					background-color: #7e87b0;
+					display: block;
+					position: absolute; left: -52px;
+					clip-path: polygon(49% 0%, 86% 100%, 100% 100%);
+				}
+
+			div.iland div.land div.muntains div.mountain.black.two {
+				width: 234px;
+				height: 163px;
+				position: absolute;
+				top: -146px; left: 38%;
+				background-color: #43414f;
+				clip-path: polygon(34% 0%, 75% 5%, 100% 100%, 0% 100%);
+			}
+				div.iland div.land div.muntains div.mountain.black.two:after {
+					content: '';
+					width: 176px;
+					height: 203px;
+					background-color: #595765;
+					display: block;
+					position: absolute;
+					left: -1px; top: -38px;
+					clip-path: polygon(0% 100%, 46% 18%, 100% 22%, 96% 35%, 57% 34%, 6% 100%);
+				}
+			div.iland div.land div.muntains div.mountain.black.one {
+				width: 147px;
+				height: 98px;
+				position: absolute;
+				top: -81px; left: 30.2%;
+				background-color: #43414f;
+				clip-path: polygon(39% 8%, 74% 0%, 100% 100%, 0% 100%);
+			}
+				div.iland div.land div.muntains div.mountain.black.one:after {
+					content: '';
+					width: 111px;
+					height: 121px;
+					background-color: #595765;
+					display: block;
+					position: absolute;
+					left: 1px; top: -23px;
+					clip-path: polygon(0% 100%, 51% 25%, 97% 19%, 98% 37%, 69% 42%, 9% 100%);
+				}
+
+			
+		div.iland div.land div.house {
+			width: 87px;
+			height: 40px;
+			background-color: #c9ad88;
+			position: absolute;
+			bottom: 51px; left: 47.9%;
+		}
+			div.iland div.land div.house div.roof {
+				border-bottom: 34px solid #ff5c05;
+				border-left: 11px solid transparent;
+				border-right: 11px solid transparent;
+				height: 0;
+				width: 89px;
+				position: absolute;
+				top: -34px; left: -13px;
+			}
+
+			div.iland div.land div.house div.window {
+				width: 15px;
+				height: 15px;
+				background-color: #687a88;
+				position: absolute;
+				top: 10px; left: 8px;
+			}
+			div.iland div.land div.house div.window:nth-child(2) {
+				left: 32px;
+			}
+
+			div.iland div.land div.house div.door {
+				width: 15px;
+				height: 30px;
+				background-color: #687a88;
+				position: absolute;
+				bottom: 0; left: 57px;
+			}
+
+			div.iland div.land div.house div.roofShadow {
+				width: 100%;
+				height: 7px;
+				background-color: #a48c70;
+				position: absolute;top: 0;
+			}
+
+
+
+	div.iland div.pillow {
+		width: 90%;
+		height: 70px;
+		border-radius: 50px;
+		background-color: #22b0d6;
+		margin: 0 auto;
+		position: relative;
+	}
